@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Finder</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="pokemonSearchTest.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <h3>Pokémon Finder</h3>
+        <div>
+          <input
+            type="text"
+            name="pokemonName"
+            id="pokemonName"
+            placeholder="Enter Pokémon name"
+          />
+        </div>
+        <div>
+          <button onclick="fetchPokemon()">Fetch Pokémon</button>
+        </div>
+        <div>
+          <img
+            src=""
+            alt="Pokemon Sprite"
+            id="pokemonSprite"
+            class="img-fluid mx-auto"
+            style="display: none; height: 200px"
+          />
+          <p id="errorText"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
