@@ -67,5 +67,3 @@ Network requests take time. Before sending the request, give the user some feedb
 - `addEventListener` and keyboard events
 - `async/await` and the Fetch API
 - `try/catch` for error handling
-
-If something feels unfamiliar, [MDN Web Docs](https://developer.mozilla.org/) is always a good place to start.
