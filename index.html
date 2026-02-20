@@ -15,6 +15,8 @@
       <div>
         <h3>Pokémon Finder</h3>
         <div>
+
+          <!-- The text input 👇👇👇 -->
           <input
             type="text"
             name="pokemonName"
@@ -23,9 +25,11 @@
           />
         </div>
         <div>
-          <button onclick="fetchPokemon()">Fetch Pokémon</button>
+          <button id="button" onclick="fetchPokemon()">Fetch Pokémon</button>
         </div>
         <div>
+
+          <!-- Image placement 👇👇👇 -->
           <img
             src=""
             alt="Pokemon Sprite"
@@ -33,6 +37,8 @@
             class="img-fluid mx-auto"
             style="display: none; height: 200px"
           />
+
+          <!-- Empty placement for error messages 👇⚠️ -->
           <p id="errorText"></p>
         </div>
       </div>
