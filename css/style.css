@@ -23,6 +23,11 @@ body {
   text-align: center;
 }
 
+img {
+  display: none;
+  height: 200px
+}
+
 h3 {
   font-size: 28px;
   margin: 0 0 24px 0;
