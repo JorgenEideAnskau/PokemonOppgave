@@ -15,6 +15,8 @@ https://pokeapi.co/api/v2/pokemon/{name}
 
 Browse the [PokéAPI documentation](https://pokeapi.co/) to explore what the response looks like. You'll need to figure out where in the response object the sprite image URL is stored — try fetching a Pokémon in your browser first.
 
+> **Hint:** there are several, but which JSON path would be consistent and exist for all pokemon?
+
 > **Note:** `fetch()` does **not** throw an error when a Pokémon isn't found (HTTP 404). You'll need to check the response yourself and handle that case manually.
 
 ---
@@ -58,7 +60,9 @@ Wrap your fetch logic in a `try/catch` block. Inside the `try` block:
 Inside the `catch` block, display the error message to the user and apply the error CSS class.
 
 ### 6. *(Optional)* Show a loading state
-Network requests take time. Before sending the request, give the user some feedback that something is happening. If you get here, think about where in the function this feedback should appear, and where it should be cleared again.
+Network requests take time — giving the user feedback while waiting is an important part of good UX. Before sending the request, show some indication that something is happening, and make sure to clear it again when the request finishes (whether it succeeded or failed).
+
+*If* you want to go <u>*even*</u> further, think about *what kind* of loading feedback makes most sense here. A text message? A spinner? A skeleton screen? This article is a good starting point for delving deeper into this subject: [This one UI decision makes apps feel 10x faster](https://medium.com/@mohitphogat/this-one-ui-decision-makes-apps-feel-10x-faster-even-when-they-arent-be2b541054fe)
 
 ---
 
